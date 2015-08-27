@@ -1,0 +1,375 @@
+html,body
+{
+	height:100vh;
+    width:100vw;
+	position:absolute;
+	
+}
+
+#strip-one
+{
+	width:6%;
+	height:100%;
+	background:#33AD5C;
+	position:relative;
+	float:left;
+}
+#strip-two
+{
+	width:11%;
+	height:100%;
+	background:#FF7519;
+	position:relative;
+	float:left;
+}
+#strip-three
+{
+	width:11%;
+	height:100%;
+	background:#E60000;
+	position:relative;
+	float:left;
+}
+#strip-four
+{
+	width:11%;
+	height:100%;
+	background:#2E8A5C;
+	position:relative;
+	float:left;
+}
+#strip-five
+{
+	width:11%;
+	height:100%;
+	background:#33AD5C;
+	position:relative;
+	float:left;
+}
+#strip-six
+{
+	width:6%;
+	height:100%;
+	background:#FF7519;
+	position:relative;
+	float:left;
+}
+#second
+{
+	width:60%;
+	height:100%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:#F0F8FF;
+}
+
+
+#strip
+{
+	width:100%;
+	height:1.2%;
+}
+#exceptStrip
+{
+	width:100%;
+	height:98.8%;
+}
+#second-one
+{
+	width:100%;
+	height:5%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:#F0F8FF;
+}
+#second-two
+{
+	width:50%;
+	height:95%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:#F0F8FF;
+}
+#second-three
+{
+	width:50%;
+	height:95%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:red;
+}
+#second-three-one
+{
+	width:100%;
+	height:10%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:#F0F8FF;
+}
+#second-three-two
+{
+	width:100%;
+	height:80%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:green;
+}
+#second-three-two-hidden
+{
+	width:100%;
+	height:90%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:#F0F8FF;
+}
+#second-three-three
+{
+	width:100%;
+	height:10%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:green;
+}
+#second-two-one
+{
+	width:100%;
+	height:70%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	
+}
+#second-two-two
+{
+	width:100%;
+	height:15%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:#F0F8FF;
+}
+#second-two-three
+{
+	width:100%;
+	height:10%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:#F0F8FF;
+}
+#second-two-four
+{
+	width:100%;
+	height:5%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:#F0F8FF;
+}
+#third
+{
+	width:40%;
+	height:100%;
+	float:left;
+	border-color:#ADD8E6;
+	border-style:solid;
+	position:relative;
+	background:#F0F8FF;
+}
+
+
+
+#operator-box
+{
+    background:#F0F8FF;
+	width:100%;
+	height:20%;
+}
+#number-pad
+{
+   
+    background:#F0F8FF;
+	width:100%;
+	height:80%;
+}
+
+#OP-box-two
+{
+    background:#F0F8FF;
+	width:100%;
+	height:100%;
+	color:black;
+}
+#box
+{
+    font-size:large;
+}
+
+
+#NP-One-row1
+{
+    background:#F0F8FF;
+	width:100%;
+	height:20%;
+}
+#NP-One-row2
+{
+    background:#F0F8FF;
+	width:100%;
+	height:20%;
+}
+#NP-One-row3
+{
+    background:#F0F8FF;
+	width:100%;
+	height:20%;
+}
+#NP-One-row4
+{
+   
+    background:#F0F8FF;
+	width:100%;
+	height:20%;
+}
+#NP-One-row5
+{
+   
+    background:#F0F8FF;
+	width:100%;
+	height:100%;
+}
+#enter-key
+{
+    height:100%;
+	width:50%;
+}
+
+button[type="numpadButton"]
+{
+	height:100%;
+	width:25%;
+	background-color:#ADD8E6;
+	color:#F0F8FF;
+	float:left;
+	 
+	color: black;
+	font-size:2vw;
+	position:relative;
+	border-radius:1vw;
+	
+}
+
+button[type="pocButton"]
+{
+	height:14%;
+	width:25%;
+	background-color:#ADD8E6;
+	color:#F0F8FF;
+	float:left;
+	 
+	color: black;
+	font-size:1.5vw;
+	position:relative;
+	border-radius:1vw;
+	
+}
+button[type="cashButton"]
+{
+	height:100%;
+	width:25%;
+	background-color:green;
+	color:#F0F8FF;
+	float:left;
+	 
+	color: white;
+	font-size:2vw;
+	position:relative;
+	border-radius:3vw;
+}
+button[type="pocButtonYellow"]
+{
+	height:14%;
+	width:25%;
+	background-color:yellow;
+	color:#F0F8FF;
+	float:left;
+	 
+	color: black;
+	font-size:1.5vw;
+	position:relative;
+	border-radius:1vw;
+	
+}
+button[type="pocButtonYellowMod"]
+{
+	height:16.6%;
+	width:33%;
+	background-color:yellow;
+	color:#F0F8FF;
+	float:left;
+	 
+	color: black;
+	font-size:1.5vw;
+	position:relative;
+	border-radius:1vw;
+	
+}
+button[type="pocButtonLightPink"]
+{
+	height:14%;
+	width:25%;
+	background-color:#FF00FF;
+	color:black;
+	float:left;
+
+	font-size:1.5vw;
+	position:relative;
+	border-radius:1vw;
+	
+}
+button[type="pocButtonMaroon"]
+{
+	height:14%;
+	width:25%;
+	background-color:#990000;
+	color:white;
+	float:left;
+
+	font-size:1.5vw;
+	position:relative;
+	border-radius:1vw;
+	
+}
+#zero-key
+{
+    height:100%;
+	width:100%;
+}
+#tb1
+{
+    font-size:200%;
+    background-color : #F0F8FF;
+	width: 98.25%;
+	height:88%;
+}
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Todo</title>
+	
+	<link href="css/Stylesheet.css" rel="stylesheet">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  </head>
+	<body ng-controller="MainController" >
+<div id="strip">
+    <div id="strip-one">  </div> 
+    <div id="strip-two">  </div> 
+    <div id="strip-three">  </div> 
+    <div id="strip-four">  </div> 
+    <div id="strip-five">  </div> 
+    <div id="strip-two">  </div> 
+    <div id="strip-three">  </div> 
+    <div id="strip-four">  </div> 
+    <div id="strip-five">  </div> 
+    <div id="strip-six">  </div> 
+	
+</div>
+<div id="exceptStrip">
+	<div id="second">
+		<div id="second-one">
+		</div>
+		<div id="second-two">
+			<div id="second-two-one">
+			</div>
+			<div id="second-two-two">
+			</div>
+			<div id="second-two-three">
+			 
+			</div>
+			<div id="second-two-four">
+			</div>
+			
+		</div>
+		<div id="second-three">
+		<div id="second-three-one">
+			  AMOUNT OR FUNCTION
+			</div>
+			<div id="second-three-two" ng-hide="hideFlagForKeypad">
+			<div id="operator-box">
+					    
+						
+							<form name="myFormNg" ng-submit="okpress()">
+								
+							<input type="{{cntrlstring}}" name="formid" style="position: size: 5vw;absolute; height:5vw; width: 100%; padding: 0px;" ng-model="btnstring" id="tb1" autofocus required>
+							
+							<input type="button"  name="Submit" value=" Apply " style="position: absolute; height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" tabindex="-1" />
+							</form>
+						     <!--<input type="text" id="tb1" ng-model="btnstring"></input>-->
+						
+					</div>
+					<div id="number-pad" >
+					   
+						    <div id="NP-One-row1">
+							   <button type="numpadButton" ng-click="btnpress(7)" >7</button>
+							   <button type="numpadButton" ng-click="btnpress(8)" >8</button>
+							   <button type="numpadButton" ng-click="btnpress(9)" >9</button>
+							   <button type="numpadButton" >X</button>
+							</div>
+							<div id="NP-One-row2">
+							   <button type="numpadButton" ng-click="btnpress(4)" >4</button>
+							   <button type="numpadButton" ng-click="btnpress(5)" >5</button>
+							   <button type="numpadButton" ng-click="btnpress(6)" >6</button>
+							    <button type="numpadButton" >Error Correct</button>
+							</div>
+							<div id="NP-One-row3">
+							   <button type="numpadButton" ng-click="btnpress(1)" >1</button>
+							   <button type="numpadButton" ng-click="btnpress(2)" >2</button>
+							   <button type="numpadButton" ng-click="btnpress(3)" >3</button>
+							    <button type="numpadButton"  >Clear</button>
+							</div>
+							<div id="NP-One-row4">
+							    <button  type="numpadButton" ng-click="btnpress(0)" >00</button>
+								 <button type="numpadButton" ng-click="btnpress(0)" >0</button>
+								  <button type="numpadButton" id="enter-key" ng-click="btnpress(0)" >Enter</button>
+							</div>
+				</div>
+				</div>
+				<div id="second-three-three" ng-hide="hideFlagForKeypad">
+							<div id="NP-One-row5">
+							    <button type="cashButton" >$1</button>
+							   <button type="cashButton" >$5</button>
+							   <button type="cashButton" >$10</button>
+							   <button type="cashButton" >$20</button>
+							
+					
+						    
+						</div>
+					</div>
+					<div id="second-three-two-hidden" ng-hide="!hideFlagForKeypad">
+					<button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							    <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							    <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							     <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							    <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+							   <button type="pocButtonYellowMod" ></button>
+					</div>
+					
+		</div>
+		 
+	</div>
+	<div id="third" ng-hide="hideFlagForKeypad">
+							   <button type="pocButtonYellow" ng-click="allButtonsPressed()" >ALL CUPS</button>
+							   <button type="pocButtonYellow" >NEWS / CIGARS</button>
+							   <button type="pocButton" ></button>
+							   <button type="pocButton" ></button>
+							    <button type="pocButtonYellow" >AM FOOD</button>
+							   <button type="pocButtonMaroon" >MO WITH FEE </button>
+							   <button type="pocButton" ></button>
+							   <button type="pocButton" >ITEM VOID</button>
+							    <button type="pocButtonYellow" >PM FOOD</button>
+							   <button type="pocButton" >COUPON</button>
+							   <button type="pocButtonYellow" >PLU SALE</button>
+							   <button type="pocButton" >OTHER FUNCT</button>
+							    <button type="pocButtonYellow" >PROMO CHGMKR</button>
+							   <button type="pocButton" >PLU INQUIRY</button>
+							   <button type="pocButtonLightPink" >LOTTO SALES</button>
+							   <button type="pocButtonMaroon" >LOAD CARD</button>
+							    <button type="pocButtonLightPink" >DEPT SALE</button>
+							   <button type="pocButtonLightPink" >SCRATCH WINS</button>
+							   <button type="pocButtonLightPink" >LOTTO WINS</button>
+							   <button type="pocButton" >BALANCE INQUIRY</button>
+							    <button type="pocButton" >SAFE</button>
+							   <button type="pocButton" >NO SALE</button>
+							   <button type="pocButton" ></button>
+							   <button type="pocButton" >VOID TRANS</button>
+							    <button type="pocButton" ></button>
+							   <button type="pocButton" >RECEIPT REPRINT</button>
+							   <button type="pocButton" >OPER MENU</button>
+							   <button type="pocButton" ></button>
+	</div>
+		<div id="third" ng-hide="!hideFlagForKeypad"> 
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							    <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							    <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							    <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							    <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							    <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							    <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ></button>
+							   <button type="pocButtonYellow" ng-click="exitFromAllCups()" >Exit</button>
+	</div>
+</div>
+	<script src="js/angular.js"></script>
+	<script src="js/app1.js"></script>
+	</body>
+</html>
